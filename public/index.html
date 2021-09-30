@@ -29,6 +29,7 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <h1 class="heading"></h1>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +40,30 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- <script>
+      let html = document.querySelector('.heading')
+        const flightExpress = {
+        name:'',
+        countries:[],
+        showResult(customerName , destination){
+            return(
+              html.insertAdjacentHTML('afterbegin' , `<div>
+                <p>${customerName} from ${this.countries[0]} will go to ${destination} with ${this.name}</p>
+                <p>${customerName} from ${this.countries[1]} will go to ${destination} with ${this.name}</p>
+                </div>`))
+            }
+        }
+        const firstflight={
+            name:'Luftansa',
+            countries:['Germany' , 'United States']
+        } 
+        const flight = flightExpress.showResult;//object of function
+        flight.call(firstflight , 'stephan' , 'hghghghghhghgh')// an exapmle of 
+        const flightBind = flight.bind(firstflight)
+        flightBind('ali' , 'Marburg')
+        
+
+    </script> -->
   </body>
 </html>
